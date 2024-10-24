@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Network</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="explore.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Simple styles for the sections */
+        .section {
+            display: none; /* Hide all sections by default */
+        }
+        .active {
+            display: block; /* Show active section */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to the Alumni Network</h1>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <a href="#" onclick="showSection('alumni')">Alumni Directory</a>
+            <a href="signup.php" onclick="showSection('signup')">Sign Up</a>
+            <a href="login.php" onclick="showSection('login')">Login</a>
+            <a href="#" onclick="showSection('contact')">Contact Us</a>
+            <a href="#" onclick="showSection('profile')">My Profile</a> <!-- New Profile Button -->
+        </nav>
+    </header>
+
+    <center>
+        <section id="home" class="section active">
+            <div class="home-content">
+                <h2>Welcome to the Alumni Network</h2>
+                <p>Stay connected with your fellow alumni and strengthen the bonds that last a lifetime.</p>
+                <p>Explore opportunities to network, collaborate, and grow both personally and professionally.</p>
+                
+                    <li>Reconnect with old classmates</li>
+                    <li>Discover alumni events and meetups</li>
+                    <li>Access exclusive job listings</li>
+                
+                <button class="explore-btn" onclick="redirectToAlumni()">Explore Now</button>
+            </div>
+        </section>
+
+        <script>
+            function redirectToAlumni() {
+                window.location.href = "alumni.html";  
+            }
+        </script>
+
+        <section id="alumni" class="section">
+            <h2>Find Alumni</h2>
+            <input type="text" id="search" placeholder="Search alumni..." onkeyup="searchAlumni()">
+            <div id="alumniList">
+                <div class="alumni-card">
+                    <a href="2html.html"><img src="images/sanju.jpg" alt="Raj"></a>
+                    <div class="alumni-info">
+                        <h3>Raj</h3>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="3html.html"><img src="images/cook.jpg" alt="Gautham"></a>
+                    <div class="alumni-info">
+                        <h3>Gautham</h3>
+                        <p>Data Scientist</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="4html.html"><img src="images/boy4.jpg" alt="Joe"></a>
+                    <div class="alumni-info">
+                        <h3>Joe</h3>
+                        <p>Marketing Specialist</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="5html.html"><img src="images/hardik.jpg" alt="Davis"></a>
+                    <div class="alumni-info">
+                        <h3>Davis</h3>
+                        <p>Professor</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="6html.html"><img src="images/rabada.jpg" alt="Beni"></a>
+                    <div class="alumni-info">
+                        <h3>Beni</h3>
+                        <p>UX/UI Designer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="7html.html"><img src="images/smith.jpg" alt="Alex"></a>
+                    <div class="alumni-info">
+                        <h3>Alex</h3>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="8html.html"><img src="images/boy2.jpg" alt="Sam"></a>
+                    <div class="alumni-info">
+                        <h3>Sam</h3>
+                        <p>Data Analyst</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="9html.html"><img src="images/girl1.jpg" alt="Jeni"></a>
+                    <div class="alumni-info">
+                        <h3>Jeni</h3>
+                        <p>Database Administrator</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="10html.html"><img src="images/boy1.jpg" alt="James"></a>
+                    <div class="alumni-info">
+                        <h3>James</h3>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="ahtml.html"><img src="images/girl3.jpg" alt="Madhu"></a>
+                    <div class="alumni-info">
+                        <h3>Madhu</h3>
+                        <p>Game Developer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="bhtml.html"><img src="images/booy3.jpg" alt="Durai"></a>
+                    <div class="alumni-info">
+                        <h3>Durai</h3>
+                        <p>Data Scientist</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="chtml.html"><img src="images/john.jpg" alt="Paulson"></a>
+                    <div class="alumni-info">
+                        <h3>Paulson</h3>
+                        <p>Data Analyst</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="dhtml.html"><img src="images/stokes.jpg" alt="Daniel"></a>
+                    <div class="alumni-info">
+                        <h3>Daniel</h3>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="ehtml.html"><img src="images/girl2.jpg" alt="Riya"></a>
+                    <div class="alumni-info">
+                        <h3>Riya</h3>
+                        <p>Graphic Designer</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="fhtml.html"><img src="images/girl4.jpg" alt="Merin"></a>
+                    <div class="alumni-info">
+                        <h3>Merin</h3>
+                        <p>Dentist</p>
+                    </div>
+                </div>
+                <div class="alumni-card">
+                    <a href="hhtml.html"><img src="images/boy5.jpg" alt="Matthew"></a>
+                    <div class="alumni-info">
+                        <h3>Matthew</h3>
+                        <p>Electrician</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <h2>My Profile</h2>
+            <form id="profileForm">
+                <label for="profileName">Name:</label>
+                <input type="text" id="profileName" value="TN Paulson" required> <!-- Pre-filled Name -->
+                
+                <label for="collegeName">College Name:</label>
+                <input type="text" id="collegeName" value="Sathyabama University" required> <!-- Pre-filled College Name -->
+                
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" value="Software Engineer" required> <!-- Pre-filled Job Title -->
+                
+                <label for="bio">Biography:</label>
+                <textarea id="bio" placeholder="You Train... I Learn...."></textarea>
+                
+                <button type="submit" style="width: 200px;">Update Profile</button>
+            </form>
+        </section>
+
+        <section id="forgotPassword" class="section" style="display: none;">
+            <h2>Reset Password</h2>
+            <form id="resetPasswordForm">
+                <label for="newPassword"></label>
+                <input type="password" id="newPassword" placeholder="Enter New Password">
+                <label for="confirmPassword"></label>
+                <input type="password" id="confirmPassword" placeholder="Confirm New Password">
+                <button type="submit" style="width: 230px;">Reset Password</button>
+            </form>
+        </section>
+
+        <center>
+            <section id="login" class="section">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Email">
+                    <label for="password"></label>
+                    <input type="password" id="password" placeholder="Password">
+                    <button type="submit" style="width: 230px;">Submit</button>
+                </form>
+                <p>
+                    <a href="" id="forgotPasswordLink">Forgot Password?</a>
+                </p>
+            </section>
+        </center>
+
+        <center>
+            <section id="contact" class="section">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" required></textarea>
+                    <button type="submit" style="width: 200px;">Send Message</button>
+                </form>
+            </section>
+        </center>
+
+        <footer>
+            <p>&copy; 2024 Alumni Network</p>
+        </footer>
+
+    </center>
+
+    <script>
+        // Function to show the specified section
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        // Event listener for forgot password link
+        const forgotPasswordLink = document.getElementById('forgotPasswordLink');
+        const loginSection = document.getElementById('login');
+        const forgotPasswordSection = document.getElementById('forgotPassword');
+
+        forgotPasswordLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            loginSection.style.display = 'none';
+            forgotPasswordSection.style.display = 'block';
+        });
+
+        // Reset password form handling
+        const resetPasswordForm = document.getElementById('resetPasswordForm');
+        resetPasswordForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (newPassword === confirmPassword) {
+                alert('Password has been reset successfully!');
+                loginSection.style.display = 'block';
+                forgotPasswordSection.style.display = 'none';
+            } else {
+                alert('Passwords do not match.');
+            }
+        });
+
+        // Profile form handling
+        const profileForm = document.getElementById('profileForm');
+        profileForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Profile updated successfully!');
+            // You can add more functionality here to actually update the profile data
+        });
+    </script>
+
+</body>
+</html>

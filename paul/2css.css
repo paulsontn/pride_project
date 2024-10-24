@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark background for contrast */
+    padding: 20px;
+}
+
+.alumni-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+    transition: transform 0.2s; /* Add hover effect */
+}
+
+.alumni-card:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.alumni-details {
+    flex: 2;
+    color: #fff; /* White text for contrast */
+}
+
+.alumni-details h2 {
+    margin-bottom: 10px;
+    color: #2c515f; /* Neon teal color */
+    font-size: 24px; /* Larger font size */
+    text-shadow: 0 0 5px rgba(0, 255, 204, 0.5); /* Soft glow effect */
+}
+
+.alumni-details p {
+    margin-bottom: 8px;
+    font-size: 18px; /* Slightly larger font size */
+    color: #33322c; /* Neon yellow color */
+    text-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Soft glow effect */
+}
+
+.alumni-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.alumni-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s; /* Add transition for border color */
+}
+
+.alumni-image img:hover {
+    border-color: #360136; /* Neon pink border on hover */
+}

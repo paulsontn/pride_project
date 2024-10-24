@@ -1,0 +1,159 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #2C3E50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Alumni Info Section */
+#alumni-info .alumni-content {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Alumni Info Section Heading */
+.welcome-heading {
+    color: #2980B9; /* Heading color */
+}
+
+/* Background color for paragraphs */
+.welcome-paragraph,
+.details-paragraph {
+    background-color: #ecf0f1; /* Light background color for paragraphs */
+    padding: 15px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 0; /* Margin for spacing between paragraphs */
+}
+
+.details-paragraph {
+    color: #333; /* Text color for details paragraph */
+}
+
+.image-container {
+    margin: 20px 0;
+}
+
+.alumni-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Upcoming Events Section */
+#upcoming-events .event {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#upcoming-events .event h3 {
+    color: #2980B9;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#upcoming-events .event p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Job Opportunities Section */
+#job-opportunities ul {
+    list-style: none;
+    padding: 0;
+}
+
+#job-opportunities li {
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#job-opportunities h3 {
+    color: #27AE60;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+#job-opportunities p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+#testimonials .testimonial {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #upcoming-events .event, 
+    #job-opportunities li, 
+    #testimonials .testimonial {
+        font-size: 0.9rem;
+    }
+}

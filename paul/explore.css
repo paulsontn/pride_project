@@ -1,0 +1,28 @@
+.explore-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.explore-btn:hover {
+    background: linear-gradient(45deg, #0056b3, #0097cc);
+    border-color: #00d4ff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.explore-btn:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 122, 255, 0.8);
+}
